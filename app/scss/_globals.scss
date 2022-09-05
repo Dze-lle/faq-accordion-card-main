@@ -11,9 +11,11 @@ html {
 
 body {
   font-family: "Kumbh Sans", sans-serif;
-  padding: 0;
+  padding: 0 260px;
   margin: 0;
   height: 100vh;
+  background-image: linear-gradient($softViolet, $softBlue);
+  font-size: 12px;
 }
 
 .flex {

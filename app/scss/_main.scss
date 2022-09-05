@@ -1,0 +1,11 @@
+.main {
+  background-color: $lightGrayishBlue;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 25px;
+  overflow: hidden;
+
+  &-img-container {
+    background-color: red;
+  }
+}

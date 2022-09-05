@@ -11,9 +11,11 @@ html {
 
 body {
   font-family: "Kumbh Sans", sans-serif;
-  padding: 0;
+  padding: 0 260px;
   margin: 0;
   height: 100vh;
+  background-image: linear-gradient(hsl(273deg, 75%, 66%), hsl(240deg, 73%, 65%));
+  font-size: 12px;
 }
 
 .flex {
@@ -27,4 +29,25 @@ body {
 }
 .flex-ai-c {
   align-items: center;
+}
+
+.main {
+  background-color: hsl(240deg, 5%, 91%);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 25px;
+  overflow: hidden;
+}
+.main-img-container {
+  background-color: red;
+}
+
+.container-accordion h1 {
+  text-transform: uppercase;
+  font-size: 27px;
+  font-weight: bold;
+}
+.container-accordion .article {
+  border: 1px solid magenta;
+  font-size: 15px;
 }/*# sourceMappingURL=style.css.map */
