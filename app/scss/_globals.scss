@@ -10,26 +10,25 @@ html {
 }
 
 body {
-  font-family: "Kumbh Sans", sans-serif;
-  padding: 0 260px;
-  margin: 0;
-  height: 100vh;
   background-image: linear-gradient($softViolet, $softBlue);
+  font-family: "Kumbh Sans", sans-serif;
+  padding: 0;
+  margin: 0;
   font-size: 12px;
 }
 
-.flex {
+main {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 
-  &-jc-sb {
-    justify-content: space-between;
-  }
-
-  &-jc-c {
-    justify-content: center;
-  }
-
-  &-ai-c {
-    align-items: center;
+  .container {
+    display: grid;
+    background-color: $lightGrayishBlue;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90vw;
+    border-radius: 25px;
+    max-width: 995px;
   }
 }
