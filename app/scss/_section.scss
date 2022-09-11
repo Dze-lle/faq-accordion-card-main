@@ -44,6 +44,11 @@
 
       &.open {
         .question {
+          h2 {
+            color: $veryDarkDesaturatedBlue;
+            font-weight: bold;
+          }
+
           img {
             transform: rotate(180deg);
           }

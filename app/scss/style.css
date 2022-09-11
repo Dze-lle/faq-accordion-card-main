@@ -90,6 +90,10 @@ main .container {
   border-bottom: 1px solid hsl(240deg, 5%, 91%);
   color: hsl(240deg, 6%, 50%);
 }
+.accordion li .container-questions.open .question h2 {
+  color: hsl(238deg, 29%, 16%);
+  font-weight: bold;
+}
 .accordion li .container-questions.open .question img {
   transform: rotate(180deg);
 }
