@@ -42,12 +42,15 @@ main {
   min-height: 100vh;
 
   .container {
-    display: grid;
     background-color: #fff;
-    // give more space at the left side
-    grid-template-columns: 2fr 1.6fr;
-    width: 90vw;
-    border-radius: 25px;
-    max-width: 920px;
+
+    @include for-desktop(large) {
+      display: grid;
+      // give more space at the left side
+      grid-template-columns: 2fr 1.6fr;
+      width: 90vw;
+      border-radius: 25px;
+      max-width: 920px;
+    }
   }
 }
