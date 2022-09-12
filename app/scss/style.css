@@ -41,15 +41,20 @@ main {
   align-items: center;
   min-height: 100vh;
 }
+@media (max-width: 63.9375em) {
+  main {
+    padding: 0 25px;
+  }
+}
 main .container {
   background-color: #fff;
+  border-radius: 25px;
 }
 @media (min-width: 64em) {
   main .container {
     display: grid;
     grid-template-columns: 2fr 1.6fr;
     width: 90vw;
-    border-radius: 25px;
     max-width: 920px;
   }
 }
@@ -58,39 +63,82 @@ main .container {
   position: relative;
   overflow: hidden;
 }
+@media (max-width: 63.9375em) {
+  .hero-image {
+    height: 140px;
+    overflow: visible;
+  }
+}
 .hero-image img {
-  height: 30px;
-  width: 30px;
+  position: absolute;
+}
+@media (max-width: 63.9375em) {
+  .hero-image img {
+    height: 230px;
+    width: 230px;
+    top: -90%;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
 }
 @media (min-width: 64em) {
   .hero-image img {
     height: 800px;
     width: 800px;
-    position: absolute;
     right: 20%;
     bottom: -14%;
   }
+}
+.hero-image::after {
+  content: "";
+  position: absolute;
+}
+@media (max-width: 63.9375em) {
   .hero-image::after {
-    content: "";
+    background-image: url("/app/images/illustration-woman-online-mobile.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 237px;
+    height: 180px;
+    top: -75%;
+    left: 50%;
+    right: 0;
+    transform: translateX(-50%);
+  }
+}
+@media (min-width: 64em) {
+  .hero-image::after {
     background-image: url("/app/images/illustration-woman-online-desktop.svg");
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
-    position: absolute;
     right: 102px;
     top: 37px;
   }
 }
 
 .accordion {
-  padding: 72px 0 83px 0;
+  padding: 0px 24px 41px 24px;
+}
+@media (min-width: 64em) {
+  .accordion {
+    padding: 72px 0 83px 0;
+  }
 }
 .accordion h1 {
   text-transform: uppercase;
   font-size: 28px;
   font-weight: bold;
-  padding-bottom: 46px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+@media (min-width: 64em) {
+  .accordion h1 {
+    text-align: left;
+  }
 }
 @media (min-width: 64em) {
   .accordion li {
@@ -123,6 +171,12 @@ main .container {
 .accordion li .container-questions .question h2 {
   font-size: inherit;
   font-weight: inherit;
+  padding-top: 20px;
+}
+@media (min-width: 64em) {
+  .accordion li .container-questions .question h2 {
+    padding-top: 0px;
+  }
 }
 .accordion li .container-questions .question img {
   height: 100%;

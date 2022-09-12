@@ -41,15 +41,19 @@ main {
   align-items: center;
   min-height: 100vh;
 
+  @include for-mobile(medium) {
+    padding: 0 25px;
+  }
+
   .container {
     background-color: #fff;
+    border-radius: 25px;
 
     @include for-desktop(large) {
       display: grid;
       // give more space at the left side
       grid-template-columns: 2fr 1.6fr;
       width: 90vw;
-      border-radius: 25px;
       max-width: 920px;
     }
   }
