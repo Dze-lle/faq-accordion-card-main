@@ -32,7 +32,7 @@
     position: absolute;
 
     @include for-mobile(medium) {
-      background-image: url("/app/images/illustration-woman-online-mobile.svg");
+      background-image: url("app/images/illustration-woman-online-mobile.svg");
       background-size: 100%;
       background-repeat: no-repeat;
       width: 237px;
@@ -44,7 +44,7 @@
     }
 
     @include for-desktop(large) {
-      background-image: url("/app/images/illustration-woman-online-desktop.svg");
+      background-image: url("app/images/illustration-woman-online-desktop.svg");
       background-size: 100%;
       background-repeat: no-repeat;
       width: 100%;
