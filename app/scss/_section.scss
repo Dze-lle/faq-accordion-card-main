@@ -81,11 +81,23 @@
     }
 
     .container-questions {
-      // border: 1px solid magenta;
       border-bottom: 1px solid $lightGrayishBlue;
       color: $darkGrayishBlue;
 
+      max-height: 2.1em;
+      overflow-y: hidden;
+      transition: max-height 0.7s linear;
+
+      @include for-mobile(medium) {
+        max-height: 4em;
+      }
+
       &.open {
+        max-height: 6em;
+        @include for-mobile(medium) {
+          max-height: 8em;
+        }
+
         .question {
           h2 {
             color: $veryDarkDesaturatedBlue;
@@ -95,12 +107,6 @@
           img {
             transform: rotate(180deg);
           }
-        }
-
-        p {
-          height: auto;
-          visibility: visible;
-          margin-bottom: 19px;
         }
       }
 
@@ -128,8 +134,6 @@
 
       p {
         padding: 9px 0;
-        height: 0;
-        visibility: hidden;
         font-size: 13px;
       }
     }
