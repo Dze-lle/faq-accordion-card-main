@@ -97,7 +97,7 @@ main .container {
 }
 @media (max-width: 63.9375em) {
   .hero-image::after {
-    background-image: url("/app/images/illustration-woman-online-mobile.svg");
+    background-image: url("../images/illustration-woman-online-mobile.svg");
     background-size: 100%;
     background-repeat: no-repeat;
     width: 237px;
@@ -110,7 +110,7 @@ main .container {
 }
 @media (min-width: 64em) {
   .hero-image::after {
-    background-image: url("/app/images/illustration-woman-online-desktop.svg");
+    background-image: url("../images/illustration-woman-online-desktop.svg");
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
